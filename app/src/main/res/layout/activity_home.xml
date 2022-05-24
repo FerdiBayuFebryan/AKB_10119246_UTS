@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/DrawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundfirst"
+        android:orientation="vertical">
+
+        <include layout="@layout/main_toolbar" />
+
+        <RelativeLayout
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/styleicon"
+            android:backgroundTint="@color/Icon"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/potoprofile"
+                android:fontFamily="@font/bold"
+                android:text="Profile"
+                android:textAlignment="gravity"
+                android:textColor="@color/Primary"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textprofile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_toRightOf="@+id/potoprofile"
+                android:fontFamily="@font/regular"
+                android:scrollbars="vertical"
+                android:text="Nama Saya Ferdi Bayu Febryan,Mahasiswa Teknik Informatika.Saya Berfokus pada UI/UX Desgn"
+                android:textAlignment="gravity"
+                android:textColor="@color/Primary"
+
+                android:textSize="16sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/potoprofile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/baybay" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/interest"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/styleicon"
+            android:backgroundTint="@color/Primary"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/home_hobby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="Hobby"
+                android:textColor="@color/Icon"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/home_hobby_basket"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/home_hobby"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_book" />
+
+            <ImageView
+                android:id="@+id/home_hobby_volley"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/home_hobby"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/home_hobby_basket"
+                android:src="@drawable/ic_kasur" />
+
+            <ImageView
+                android:id="@id/home_hobby_console"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/home_hobby"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/home_hobby_volley"
+                android:src="@drawable/ic_coffe" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/home_hobby"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/home_hobby_console"
+                android:src="@drawable/ic_game" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/foodDrink"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/styleicon"
+            android:backgroundTint="@color/Primary"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/home_hobby_MakananMinuman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="Makanan Dan Minuman"
+                android:textColor="@color/Icon"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/home_hoby_air_mineral"
+                android:layout_width="80dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/home_hobby_MakananMinuman"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins"
+                android:text="Air Mineral"
+                android:textAlignment="center"
+                android:textColor="@color/Photo"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/home_hobby_mieinstan"
+                android:layout_width="80dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/home_hobby_MakananMinuman"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/home_hoby_air_mineral"
+                android:fontFamily="@font/poppins"
+                android:text="Mie Instant"
+                android:textAlignment="center"
+                android:textColor="@color/Photo"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/home_hobby_Kopi_Hitam"
+                android:layout_width="80dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/home_hobby_MakananMinuman"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/home_hobby_mieinstan"
+                android:fontFamily="@font/regular"
+                android:text="Kopi Hitam"
+                android:textAlignment="center"
+                android:textColor="@color/Photo"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/interestCitacita"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/styleicon"
+            android:backgroundTint="@color/Primary"
+            android:padding="16sp">
+
+            <TextView
+                android:id="@+id/home_hobby_citacita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="Minat dan Cita-Cita"
+                android:textColor="@color/Icon"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/home_hobby_politics"
+                android:layout_width="80dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/home_hobby_citacita"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/regular"
+                android:text="Pengusaha"
+                android:textAlignment="center"
+                android:textColor="@color/Photo"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/home_hobby_design"
+                android:layout_width="80dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/home_hobby_citacita"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/home_hobby_politics"
+                android:fontFamily="@font/regular"
+                android:text="Desgner"
+                android:textColor="@color/Photo"
+                android:textSize="18sp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/home_hobby_citacitaku"
+                android:layout_width="80dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/home_hobby_citacita"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/home_hobby_design"
+                android:fontFamily="@font/regular"
+                android:text="Traveling"
+                android:textColor="@color/Photo"
+                android:textSize="18sp"
+                android:textAlignment="center"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/Text">
+
+        <include layout="@layout/main_nav_drawer" />
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
